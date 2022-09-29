@@ -57,7 +57,21 @@ const Exercise = () => {
           </p>
           <hr />
         </div>
-        
+        <div>
+          <h3>What are the differences between props and state ?</h3>
+          <p>
+            (i) In props the Data is passed from one component to another. In
+            state the Data is passed within the component only. <br />
+            (ii) Props is Immutable (cannot be modified). On other hand, State
+            is Mutable ( can be modified). <br />
+            (iii) Props can be used with state and functional components. State
+            can be used only with the state components/class component.
+            <br />
+            (iv) Props are read-only. But State is both read and write.
+            <br />
+          </p>
+          <hr />
+        </div>
       </div>
     </div>
   );
