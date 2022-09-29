@@ -8,14 +8,14 @@ const Fdata = (props) => {
     return (
       <div className="card">
         <img src={img} alt=""></img>
-        <div className='e-info'>
+        <div className="e-info">
           <p>Name: {name}</p>
           <p>Age: {age}</p>
           <p>Time: {time}min</p>
-            </div>
-            <button onClick={() => props.handleClick(props.fsdata)} className='btn'>
-                <p>Add to list</p>
-            </button>
+        </div>
+        <button onClick={() => props.handleClick(props.fsdata)} className="btn">
+          <p style={{ fontWeight: "bold", fontSize:"15px" }}>Add to list</p>
+        </button>
       </div>
     );
 };
