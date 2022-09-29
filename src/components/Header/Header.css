@@ -1,0 +1,7 @@
+ .header{
+    height: 8%;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
