@@ -29,6 +29,7 @@
     margin: 10%;
     text-align: center;
     border-radius: 15%;
+    
 
 }
 .about{
@@ -60,10 +61,14 @@
     .main{
     display: flex;
     flex-direction: column;
+    
 }
 .exercise-container{
     grid-template-columns: 2fr 1fr;
     margin-bottom:15%;   
+}
+.cart-container{
+    margin-top: 5%;
 }
     
 }

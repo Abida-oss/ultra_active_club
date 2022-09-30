@@ -1,6 +1,10 @@
 import React from 'react';
+import './List.css';
 
 const List = ({ list }) => {
+  const toast = () => {
+    alert("Activitity Complete")
+  }
   let total = 0;
   let n;
     for (const fsdata of list) {
@@ -13,8 +17,8 @@ const List = ({ list }) => {
     return (
       <div>
         <div className="profile">
-          <h2>Abeda </h2>
-          <h4>Sylhet</h4>
+          <h2 className="detail">Abeda </h2>
+          <h4 className="detail">Sylhet</h4>
           <div className="about">
             <div>
               <h3>
@@ -60,9 +64,15 @@ const List = ({ list }) => {
             </p>
           </div>
           <div className="details">
-            <p style={{ fontWeight: "bold" }}>Break time {n} </p>
+            <p style={{ fontWeight: "bold" }}>
+              Break time <span style={{ paddingRight: 20 }}></span>
+              {n}
+            </p>
           </div>
         </div>
+        <button className="btn1" onClick={toast}>
+          Activity Completed
+        </button>
       </div>
     );
 };
