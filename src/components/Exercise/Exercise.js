@@ -77,9 +77,10 @@ const Exercise = () => {
           <p>
             We specify useEffect when we are basically requesting react to
             execute the function that we pass in the useEffect function as an
-            argument, everytime the component renders. The second thing is that useeffect is used inside the component as by doing
-            this we can easily access the components state and props without
-            having to write any additional code.
+            argument, everytime the component renders. The second thing is that
+            useeffect is used inside the component as by doing this we can
+            easily access the components state and props without having to write
+            any additional code.
           </p>
         </div>
       </div>
