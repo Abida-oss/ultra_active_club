@@ -1,10 +1,15 @@
 import React from 'react';
 
 const List = ({ list }) => {
-    let total = 0;
+  let total = 0;
+  let n;
     for (const fsdata of list) {
         total = total + fsdata.time;
-    }
+  }
+  function update(name) {
+    n = name;
+    console.log(n);
+  }
     return (
       <div>
         <div className="profile">
@@ -38,11 +43,12 @@ const List = ({ list }) => {
         <div>
           <h3>Add A Break</h3>
           <div className="break">
-            <p>10s</p>
-            <p>20s</p>
-            <p>30s</p>
-            <p>40s</p>
-            <p>50s</p>
+            <button onClick={() => update("10")} className="div">
+              10s
+            </button>
+            <button>30s</button>
+            <button>40s</button>
+            <button>50s</button>
           </div>
         </div>
         <div>
@@ -54,7 +60,7 @@ const List = ({ list }) => {
             </p>
           </div>
           <div className="details">
-            <p style={{ fontWeight: "bold" }}>Break time </p>
+            <p style={{ fontWeight: "bold" }}>Break time {n} </p>
           </div>
         </div>
       </div>

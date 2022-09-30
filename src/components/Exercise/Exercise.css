@@ -54,3 +54,16 @@
     padding:2% 5%;
     margin-top: 5%;
 }
+
+
+@media only screen and (max-width: 780px) {
+    .main{
+    display: flex;
+    flex-direction: column;
+}
+.exercise-container{
+    grid-template-columns: 2fr 1fr;
+    margin-bottom:15%;   
+}
+    
+}
